@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Game - Modern Arcade</title>
+  <link rel="icon" href="/simon_icon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <h1 id="level-title">SIMON SAYS</h1>
+
+    <div class="difficulty-selector">
+      <div class="difficulty-btn active" data-speed="1000">Easy</div>
+      <div class="difficulty-btn" data-speed="700">Medium</div>
+      <div class="difficulty-btn" data-speed="400">Hard</div>
+    </div>
+
+    <div class="simon-board">
+      <div class="color-button" id="green"></div>
+      <div class="color-button" id="red"></div>
+      <div class="color-button" id="yellow"></div>
+      <div class="color-button" id="blue"></div>
+
+      <div class="center-display">
+        <div class="simon-logo">SIMON</div>
+        <div class="score-display" id="score">READY</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="control-btn" id="start-btn">START GAME</button>
+      <button class="control-btn" id="reset-btn">RESET</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    Modern Simon Game • Touch or Click to Play
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
